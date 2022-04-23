@@ -5,14 +5,24 @@ declare(strict_types = 1);
 require_once __DIR__ . '/../vendor/autoload.php';
 
 
-use App\BinarySearch;
+use App\SelectionSort\SelectionSort;
+
+$array = [-1,30, 3, 6, -10 , 0,2,120, 10, 60];
+// echo $array[2];die;
+$sort = new SelectionSort($array);
+ var_dump($sort->sort());
+// echo $array[$sort->findBiggest()];
+// echo $array[$sort->findBiggest()];
+// var_dump($sort->findSmaill());
+
+// var_dump($sort->sort());
 
 
-$array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-$needle = 7;
+//  var_dump($sort->sort());
 
-$binarySearch = new BinarySearch($array, $needle);
-echo $binarySearch->search();
+
+
+
 
 
 
